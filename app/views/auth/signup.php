@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - CoachHub</title>
+  <title>Sign Up - CoachHub</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap');
@@ -31,7 +31,7 @@
         </a>
         
         <div class="flex items-center space-x-4">
-          <a href="signup.html" class="text-[#1A1A1A] hover:text-[#D4896D] font-medium">Sign Up</a>
+          <a href="login.html" class="text-[#1A1A1A] hover:text-[#D4896D] font-medium">Login</a>
         </div>
       </div>
     </div>
@@ -41,12 +41,25 @@
   <div class="min-h-screen flex items-center justify-center pt-20 px-6">
     <div class="max-w-xl w-full py-16">
       <div class="text-center mb-12">
-        <h1 class="text-5xl font-bold text-[#1A1A1A] mb-4 serif">Welcome back</h1>
-        <p class="text-gray-700 text-lg">Log in to continue your journey</p>
+        <h1 class="text-5xl font-bold text-[#1A1A1A] mb-4 serif">Begin your journey</h1>
+        <p class="text-gray-700 text-lg">Create your account and start training</p>
       </div>
       
       <div class="bg-white border border-gray-300 p-10">
         <form class="space-y-6">
+          <!-- Full Name Field -->
+          <div>
+            <label for="name" class="block text-sm font-medium text-[#1A1A1A] mb-2">Full name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required
+              class="w-full px-5 py-4 border border-gray-300 focus:border-[#D4896D] focus:outline-none"
+              placeholder="John Doe"
+            >
+          </div>
+          
           <!-- Email Field -->
           <div>
             <label for="email" class="block text-sm font-medium text-[#1A1A1A] mb-2">Email address</label>
@@ -71,15 +84,30 @@
               class="w-full px-5 py-4 border border-gray-300 focus:border-[#D4896D] focus:outline-none"
               placeholder="••••••••"
             >
+            <p class="mt-2 text-xs text-gray-600">Minimum 8 characters required</p>
           </div>
           
-          <!-- Remember & Forgot -->
-          <div class="flex items-center justify-between">
-            <label class="flex items-center">
-              <input type="checkbox" class="w-5 h-5 text-[#D4896D] border-gray-300 focus:ring-[#D4896D]">
-              <span class="ml-2 text-sm text-gray-700">Remember me</span>
+          <!-- Confirm Password Field -->
+          <div>
+            <label for="confirm-password" class="block text-sm font-medium text-[#1A1A1A] mb-2">Confirm password</label>
+            <input 
+              type="password" 
+              id="confirm-password" 
+              name="confirm-password" 
+              required
+              class="w-full px-5 py-4 border border-gray-300 focus:border-[#D4896D] focus:outline-none"
+              placeholder="••••••••"
+            >
+          </div>
+          
+          <!-- Terms Checkbox -->
+          <div>
+            <label class="flex items-start">
+              <input type="checkbox" required class="w-5 h-5 text-[#D4896D] border-gray-300 focus:ring-[#D4896D] mt-0.5">
+              <span class="ml-3 text-sm text-gray-700">
+                I agree to the <a href="#" class="text-[#D4896D] hover:text-[#C17A5E] font-medium">Terms of Service</a> and <a href="#" class="text-[#D4896D] hover:text-[#C17A5E] font-medium">Privacy Policy</a>
+              </span>
             </label>
-            <a href="#" class="text-sm text-[#D4896D] hover:text-[#C17A5E] font-medium">Forgot password?</a>
           </div>
           
           <!-- Submit Button -->
@@ -87,7 +115,7 @@
             type="submit" 
             class="w-full px-8 py-4 bg-[#1A1A1A] text-white hover:bg-[#2A2A2A] font-medium transition-colors"
           >
-            Log In
+            Create Account
           </button>
         </form>
         
@@ -101,7 +129,7 @@
           </div>
         </div>
         
-        <!-- Social Login -->
+        <!-- Social Signup -->
         <div class="grid grid-cols-2 gap-4">
           <button class="flex items-center justify-center px-6 py-4 border border-gray-300 hover:bg-[#F5F1ED] transition-colors">
             <svg class="w-5 h-5" viewBox="0 0 24 24">
@@ -121,8 +149,8 @@
       
       <div class="text-center mt-8">
         <p class="text-gray-700">
-          Don't have an account? 
-          <a href="signup.html" class="text-[#D4896D] hover:text-[#C17A5E] font-medium">Sign up</a>
+          Already have an account? 
+          <a href="login.html" class="text-[#D4896D] hover:text-[#C17A5E] font-medium">Log in</a>
         </p>
       </div>
     </div>

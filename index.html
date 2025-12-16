@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoachHub - Transform Your Athletic Journey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap');
+    
+    * {
+      font-family: 'DM Sans', sans-serif;
+    }
+    
+    .serif {
+      font-family: 'DM Serif Display', serif;
+    }
+    
+    :root {
+      --primary: #1A1A1A;
+      --secondary: #D4896D;
+      --accent: #E8B298;
+      --cream: #F5F1ED;
+      --white: #FFFFFF;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-[#1A1A1A] flex items-center justify-center">
+            <span class="text-white font-bold text-xl serif">CH</span>
+          </div>
+          <span class="text-2xl font-bold text-[#1A1A1A] serif">CoachHub</span>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-10">
+          <a href="index.html" class="text-[#1A1A1A] font-medium border-b-2 border-[#D4896D] pb-1">Home</a>
+          <a href="coaches.html" class="text-gray-600 hover:text-[#1A1A1A]">Coaches</a>
+          <a href="#" class="text-gray-600 hover:text-[#1A1A1A]">How It Works</a>
+          <a href="#" class="text-gray-600 hover:text-[#1A1A1A]">About</a>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+          <a href="login.html" class="text-[#1A1A1A] hover:text-[#D4896D] font-medium">Login</a>
+          <a href="signup-select.html" class="px-8 py-3 bg-[#D4896D] text-white hover:bg-[#C17A5E] font-medium">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 bg-[#F5F1ED]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h1 class="text-6xl lg:text-7xl font-bold text-[#1A1A1A] mb-6 leading-tight serif text-balance">
+            Transform your athletic journey
+          </h1>
+          <p class="text-xl text-gray-700 mb-10 leading-relaxed">
+            Connect with world-class coaches who understand your goals. Personalized training designed to unlock your full potential.
+          </p>
+          
+          <!-- Search Bar -->
+          <div class="bg-white p-3 flex flex-col md:flex-row gap-3 border border-gray-300">
+            <select class="flex-1 px-5 py-4 border border-gray-300 text-[#1A1A1A] focus:outline-none focus:border-[#D4896D]">
+              <option>Select your discipline</option>
+              <option>Running</option>
+              <option>Tennis</option>
+              <option>Swimming</option>
+              <option>Basketball</option>
+              <option>Football</option>
+              <option>Yoga</option>
+            </select>
+            <button class="px-10 py-4 bg-[#1A1A1A] text-white hover:bg-[#2A2A2A] font-medium">
+              Explore Coaches
+            </button>
+          </div>
+        </div>
+        
+        <div class="relative">
+          <div class="aspect-[4/5] bg-gray-300 overflow-hidden">
+            <img src="/placeholder.svg?height=800&width=640" alt="Coach Training" class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-8 -left-8 bg-[#D4896D] text-white p-8 max-w-xs">
+            <div class="text-5xl font-bold mb-2 serif">500+</div>
+            <div class="text-lg">Certified elite coaches ready to elevate your performance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stats Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="text-center">
+          <div class="text-5xl font-bold text-[#D4896D] mb-3 serif">500+</div>
+          <div class="text-gray-700 text-lg">Expert Coaches</div>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold text-[#D4896D] mb-3 serif">50+</div>
+          <div class="text-gray-700 text-lg">Disciplines</div>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold text-[#D4896D] mb-3 serif">12K</div>
+          <div class="text-gray-700 text-lg">Sessions</div>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold text-[#D4896D] mb-3 serif">4.9</div>
+          <div class="text-gray-700 text-lg">Avg Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Featured Coaches -->
+  <section class="py-24 bg-[#F5F1ED]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex justify-between items-end mb-16">
+        <div>
+          <h2 class="text-5xl font-bold text-[#1A1A1A] mb-4 serif">Featured Coaches</h2>
+          <p class="text-gray-700 text-xl">Meet our certified professionals</p>
+        </div>
+        <a href="coaches.html" class="text-[#D4896D] font-medium hover:text-[#C17A5E] flex items-center">
+          View All 
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Coach Card 1 -->
+        <a href="coach-profile.html" class="group block">
+          <div class="bg-white overflow-hidden border border-gray-300 hover:border-[#D4896D] transition-all">
+            <div class="aspect-[3/4] bg-gray-200 overflow-hidden">
+              <img src="/placeholder.svg?height=600&width=450" alt="Coach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-3 py-1 bg-[#E8B298] text-[#1A1A1A] text-xs font-medium">RUNNING</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#1A1A1A] mb-2 serif">Sarah Martinez</h3>
+              <div class="flex items-center gap-1 mb-3">
+                <span class="text-[#D4896D] text-sm">★★★★★</span>
+                <span class="text-sm text-gray-600">(127)</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">12 years • Olympic trainer</p>
+              <div class="text-2xl font-bold text-[#1A1A1A] serif">$85<span class="text-base font-normal text-gray-600">/hr</span></div>
+            </div>
+          </div>
+        </a>
+        
+        <!-- Coach Card 2 -->
+        <div class="group block">
+          <div class="bg-white overflow-hidden border border-gray-300 hover:border-[#D4896D] transition-all">
+            <div class="aspect-[3/4] bg-gray-200 overflow-hidden">
+              <img src="/placeholder.svg?height=600&width=450" alt="Coach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-3 py-1 bg-[#E8B298] text-[#1A1A1A] text-xs font-medium">TENNIS</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#1A1A1A] mb-2 serif">James Chen</h3>
+              <div class="flex items-center gap-1 mb-3">
+                <span class="text-[#D4896D] text-sm">★★★★★</span>
+                <span class="text-sm text-gray-600">(89)</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">15 years • ATP certified</p>
+              <div class="text-2xl font-bold text-[#1A1A1A] serif">$95<span class="text-base font-normal text-gray-600">/hr</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Coach Card 3 -->
+        <div class="group block">
+          <div class="bg-white overflow-hidden border border-gray-300 hover:border-[#D4896D] transition-all">
+            <div class="aspect-[3/4] bg-gray-200 overflow-hidden">
+              <img src="/placeholder.svg?height=600&width=450" alt="Coach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-3 py-1 bg-[#E8B298] text-[#1A1A1A] text-xs font-medium">SWIMMING</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#1A1A1A] mb-2 serif">Emma Wilson</h3>
+              <div class="flex items-center gap-1 mb-3">
+                <span class="text-[#D4896D] text-sm">★★★★★</span>
+                <span class="text-sm text-gray-600">(145)</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">10 years • National champ</p>
+              <div class="text-2xl font-bold text-[#1A1A1A] serif">$80<span class="text-base font-normal text-gray-600">/hr</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Coach Card 4 -->
+        <div class="group block">
+          <div class="bg-white overflow-hidden border border-gray-300 hover:border-[#D4896D] transition-all">
+            <div class="aspect-[3/4] bg-gray-200 overflow-hidden">
+              <img src="/placeholder.svg?height=600&width=450" alt="Coach" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="px-3 py-1 bg-[#E8B298] text-[#1A1A1A] text-xs font-medium">BASKETBALL</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#1A1A1A] mb-2 serif">Marcus Thompson</h3>
+              <div class="flex items-center gap-1 mb-3">
+                <span class="text-[#D4896D] text-sm">★★★★★</span>
+                <span class="text-sm text-gray-600">(98)</span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">8 years • NCAA coach</p>
+              <div class="text-2xl font-bold text-[#1A1A1A] serif">$90<span class="text-base font-normal text-gray-600">/hr</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-32 bg-[#1A1A1A] text-white">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+      <h2 class="text-5xl lg:text-6xl font-bold mb-8 serif text-balance">Ready to elevate your performance?</h2>
+      <p class="text-xl text-gray-300 mb-12 leading-relaxed">Join thousands of athletes achieving their goals with personalized coaching</p>
+      <a href="signup-select.html" class="inline-block px-12 py-5 bg-[#D4896D] text-white hover:bg-[#C17A5E] font-medium text-lg">
+        Start Your Journey
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 bg-[#1A1A1A] flex items-center justify-center">
+              <span class="text-white font-bold text-xl serif">CH</span>
+            </div>
+            <span class="text-2xl font-bold text-[#1A1A1A] serif">CoachHub</span>
+          </div>
+          <p class="text-gray-600">Connecting athletes with elite coaches worldwide.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-[#1A1A1A] mb-4">Platform</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="coaches.html" class="hover:text-[#D4896D]">Find Coaches</a></li>
+            <li><a href="signup-select.html" class="hover:text-[#D4896D]">Become a Coach</a></li>
+            <li><a href="#" class="hover:text-[#D4896D]">How It Works</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-[#1A1A1A] mb-4">Company</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="#" class="hover:text-[#D4896D]">About Us</a></li>
+            <li><a href="#" class="hover:text-[#D4896D]">Contact</a></li>
+            <li><a href="#" class="hover:text-[#D4896D]">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-[#1A1A1A] mb-4">Legal</h4>
+          <ul class="space-y-3 text-gray-600">
+            <li><a href="#" class="hover:text-[#D4896D]">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-[#D4896D]">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-200 pt-8 text-center text-gray-600">
+        <p>&copy; 2025 CoachHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
