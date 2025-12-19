@@ -48,7 +48,7 @@
             </div>
 
             <div class="bg-white border border-gray-300 p-10">
-                <form method="POST" action="/CoachPro/controllers/authcontrollers.php" class="space-y-6">
+                <form method="POST" action="/CoachPro/controllers/signupcontroller.php" class="space-y-6">
                     <!-- Full Name Field -->
                     <div>
                         <label for="name" class="block text-sm font-medium text-[#1A1A1A] mb-2">Full name</label>
@@ -82,8 +82,8 @@
                             required
                             class="w-full px-5 py-4 border border-gray-300 focus:border-[#D4896D] focus:outline-none">
                             <option value="">Select your role</option>
-                            <option value="client">Client</option>
-                            <option value="coach">Coach</option>
+                            <option value="client">client</option>
+                            <option value="coach">coach</option>
                         </select>
                     </div>
 

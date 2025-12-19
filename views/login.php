@@ -52,7 +52,7 @@
             </div>
 
             <div class="bg-white border border-gray-300 p-10">
-                <form method="POST" action="/CoachPro/app/controllers/AuthController.php" class="space-y-6">
+                <form method="POST" action="../controllers/logincotroller.php" class="space-y-6">
                     <!-- Email Field -->
                     <div>
                         <label for="email" class="block text-sm font-medium text-[#1A1A1A] mb-2">Email address</label>
