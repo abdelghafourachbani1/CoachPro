@@ -1,5 +1,5 @@
 <?php
-    require_once '../controllers/createprofilecontroller.php'; 
+    require_once '../controllers/profilecontroller.php'; 
 ?>
 
 <form method="POST" action="../controllers/editprofilecontroller.php" class="space-y-6">
@@ -11,7 +11,7 @@
 
     <div>
         <label for="experience_years">Years of Experience</label>
-        <input type="number" id="experience_years" name="experience_years" required min="0" max="50" value="<?= (int)$profile['experience_years'] ?>">
+        <input type="number" id="experience_years" name="experience_years" required min="0" max="50" value="<?= $profile['experience_years'] ?>">
     </div>
 
     <div>
